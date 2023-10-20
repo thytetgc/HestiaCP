@@ -39,3 +39,12 @@ cd /usr/local/hestia/data/templates/email/
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/email_credentials.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/ftp_credentials.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/reset_password.html
+
+cd /var/www/document_errors/
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/50x.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/403.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/404.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/410.html
+
+cd /var/www/html/
+          wget -O https://raw.githubusercontent.com/thytetgc/HestiaCP/main/unassigned/index.html
