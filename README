@@ -10,7 +10,9 @@
  HOSTLP -- https://www.hostlp.com.br
 -------------------------------------------------
 
-Baixe os arquivos e faça a importação:
+----------------------------------------------------------
+---------TROCAR TEMPLATES DOS ERROS DE PAGINAS---------
+----------------------------------------------------------
 
 cd /usr/local/hestia/data/templates/web/skel/public_html/
     find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
@@ -38,14 +40,6 @@ cd /usr/local/hestia/data/templates/web/unassigned/
     find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/unassigned/index.html
 
-cd /usr/local/hestia/data/templates/email/
-    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/account_ready.html
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/database_credentials.html
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/email_credentials.html
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/ftp_credentials.html
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/reset_password.html
-
 cd /var/www/document_errors/
     find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/50x.html
@@ -56,3 +50,16 @@ cd /var/www/document_errors/
 cd /var/www/html/
     find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget -O https://raw.githubusercontent.com/thytetgc/HestiaCP/main/unassigned/index.html
+
+
+----------------------------------------------------------
+---------TROCAR TEMPLATES DOS E-MAILS AUTOMATICOS---------
+----------------------------------------------------------
+
+cd /usr/local/hestia/data/templates/email/
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/account_ready.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/database_credentials.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/email_credentials.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/ftp_credentials.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/reset_password.html
