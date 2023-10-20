@@ -16,10 +16,10 @@ cd /usr/local/hestia/data/templates/web/skel/public_html/
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/public_html/index.html
 
 cd /usr/local/hestia/data/templates/web/skel/document_errors/
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/50x.html
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/403.html
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/404.html
-          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/410.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/50x.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/403.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/404.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/410.html
 
 cd /usr/local/hestia/data/templates/web/suspend/
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/suspend/index.html
