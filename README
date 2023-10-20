@@ -13,27 +13,33 @@
 Baixe os arquivos e faça a importação:
 
 cd /usr/local/hestia/data/templates/web/skel/public_html/
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/public_html/index.html
 
 cd /usr/local/hestia/data/templates/web/skel/document_errors/
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/50x.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/403.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/404.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/410.html
 
 cd /usr/local/hestia/web/error
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/50x.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/403.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/404.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/410.html
 
 cd /usr/local/hestia/data/templates/web/suspend/
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/suspend/index.html
 
 cd /usr/local/hestia/data/templates/web/unassigned/
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/unassigned/index.html
 
 cd /usr/local/hestia/data/templates/email/
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/account_ready.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/database_credentials.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/email_credentials.html
@@ -41,10 +47,12 @@ cd /usr/local/hestia/data/templates/email/
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/email/reset_password.html
 
 cd /var/www/document_errors/
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/50x.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/403.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/404.html
           wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/document_errors/410.html
 
 cd /var/www/html/
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
           wget -O https://raw.githubusercontent.com/thytetgc/HestiaCP/main/unassigned/index.html
