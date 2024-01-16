@@ -49,13 +49,15 @@ cd /var/www/document_errors/
 
 cd /var/www/html/
     find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
-          wget -O https://raw.githubusercontent.com/thytetgc/HestiaCP/main/unassigned/index.html
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/unassigned/index.html
 
 cd /usr/local/hestia/install/common/templates/web/skel/public_html/
-          wget -O https://raw.githubusercontent.com/thytetgc/HestiaCP/main/skel/index.html
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;         
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/skel/index.html
 
 cd /usr/local/hestia/data/templates/web/skel/public_html/
-          wget -O https://raw.githubusercontent.com/thytetgc/HestiaCP/main/skel/index.html
+    find . -type f -name "*.html" -exec rename 's/\.html$/.html.bkp/' '{}' \;
+          wget https://raw.githubusercontent.com/thytetgc/HestiaCP/main/skel/index.html
 
 
 ----------------------------------------------------------
